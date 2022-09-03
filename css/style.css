@@ -247,6 +247,11 @@ section {
     color: var(--main-color);
 }
 
+.about {
+    box-shadow: rgba(225, 225, 225, 0.08) 0px 20px 25px -5px,
+        rgba(225, 225, 225, 0.04) 0px 10px 10px -5px;
+}
+
 .about .row {
     display: flex;
     align-items: center;
@@ -278,6 +283,52 @@ section {
     font-size: 1.6rem;
     line-height: 1.8;
     margin: 1rem 0;
+}
+
+/* ----------------------menu section-------------------- */
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-transform: capitalize;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+
+.menu .box-container .box .price span {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box:hover {
+    background-color: #fff;
+    box-shadow: rgba(225, 225, 225, 0.08) 0px 20px 25px -5px,
+        rgba(225, 225, 225, 0.04) 0px 10px 10px -5px;
+}
+
+.menu .box-container .box:hover > * {
+    color: var(--black);
 }
 
 /* ------------------media quries------------------ */
