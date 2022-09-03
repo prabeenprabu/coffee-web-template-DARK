@@ -25,15 +25,15 @@ html {
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0.8rem;
 }
 
-html::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #fff;
     border-radius: 5rem;
 }
@@ -234,6 +234,52 @@ section {
     text-transform: uppercase;
 }
 
+/* ---------------------about section------------------------- */
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .row .content p {
+    color: #ccc;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
 /* ------------------media quries------------------ */
 @media screen and (max-width: 992px) {
     html {
@@ -295,6 +341,10 @@ section {
 
     .home .content p {
         font-size: 1.5rem;
+    }
+    /* ----------------------about----------------- */
+    .about .row .content {
+        text-align: center;
     }
 }
 
