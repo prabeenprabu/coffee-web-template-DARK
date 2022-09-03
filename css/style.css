@@ -431,7 +431,36 @@ section {
     color: var(--main-color);
 }
 
-----------------------
+/* ----------------------contact--------------------- */
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #fff;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    font-size: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    background-color: var(--black);
+    border: var(--border);
+}
 
 /* ------------------media quries------------------ */
 @media screen and (max-width: 992px) {
