@@ -42,6 +42,10 @@ body {
     background: var(--bg);
 }
 
+section {
+    padding: 2rem 7%;
+}
+
 /* ----------------------Header style----------------------- */
 
 .btn {
@@ -52,6 +56,7 @@ body {
     color: #fff;
     background-color: var(--main-color);
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 .btn:hover {
@@ -196,6 +201,39 @@ body {
     text-align: center;
 }
 
+/* ---------------------home part------------------------ */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    color: #eee;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.home .content .btn {
+    text-transform: uppercase;
+}
+
 /* ------------------media quries------------------ */
 @media screen and (max-width: 992px) {
     html {
@@ -204,6 +242,9 @@ body {
 
     .header {
         padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 2rem;
     }
 }
 
@@ -240,10 +281,25 @@ body {
     .header .search-form.active {
         transform: translate(-50%);
     }
+
+    /* --------------------home------------------- */
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
 }
 
-@media screen and (max-width: 450px){
-    html{
+@media screen and (max-width: 450px) {
+    html {
         font-size: 50%;
     }
 }
