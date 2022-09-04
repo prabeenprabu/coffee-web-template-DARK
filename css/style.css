@@ -440,6 +440,7 @@ section {
     flex-wrap: wrap;
     gap: 1rem;
     color: #fff;
+    padding: 0 1rem;
 }
 
 .contact .row .map {
@@ -458,8 +459,23 @@ section {
     display: flex;
     align-items: center;
     margin: 2rem 0;
-    background-color: var(--black);
+    background-color: var(--bg);
     border: var(--border);
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
 }
 
 /* ------------------media quries------------------ */
